@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Virtual Anatomy Classroom &#8211; Prof. Akash Garg</title>
+<title>USC Upstate Virtual Anatomy Classroom</title>
 <style>
-:root{--bg:#0d1b2a;--surface:#1b2d42;--card:#1e3450;--accent:#3a9bd5;--accent2:#5cb8e4;--text:#e8f4fc;--muted:#7fa8c4;--border:#2a4a6a}
+:root{--bg:#0a1f0f;--surface:#122918;--card:#163220;--accent:#00833E;--accent2:#00B189;--text:#e8f5ed;--muted:#5a9e72;--border:#1a3d22}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
-header{background:linear-gradient(135deg,#0a1628,#112240);border-bottom:1px solid var(--border);padding:24px 36px 16px;position:sticky;top:0;z-index:50}
+header{background:linear-gradient(135deg,#071510,#0d2010);border-bottom:1px solid var(--border);padding:24px 36px 16px;position:sticky;top:0;z-index:50}
 .hbrand{display:flex;align-items:center;gap:12px}
-.hicon{width:42px;height:42px;background:linear-gradient(135deg,var(--accent),#2178b5);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.hicon{width:42px;height:42px;background:linear-gradient(135deg,var(--accent),#007a38);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
 h1{font-size:1.5rem;font-weight:700;color:#fff}
 .sub{font-size:.8rem;color:var(--muted);margin-top:2px}
 .badge{font-size:.72rem;background:rgba(58,155,213,.18);border:1px solid var(--border);color:var(--accent2);padding:2px 9px;border-radius:20px;display:inline-block;margin-top:4px}
@@ -34,7 +34,7 @@ h1{font-size:1.5rem;font-weight:700;color:#fff}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}
 .card{background:var(--card);border:1px solid var(--border);border-radius:11px;overflow:hidden;cursor:pointer;transition:transform .15s,border-color .15s,box-shadow .15s}
 .card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 6px 22px rgba(58,155,213,.18)}
-.cthumb{aspect-ratio:16/10;background:linear-gradient(135deg,#0a1f35,#1a3a5c);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.cthumb{aspect-ratio:16/10;background:linear-gradient(135deg,#081510,#122818);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .ticon{font-size:30px;opacity:.35}
 .pover{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0);transition:background .15s}
 .card:hover .pover{background:rgba(0,0,0,.28)}
@@ -46,25 +46,27 @@ h1{font-size:1.5rem;font-weight:700;color:#fff}
 .empty{text-align:center;padding:60px 20px;color:var(--muted);font-size:.88rem}
 .moverlay{display:none;position:fixed;inset:0;background:rgba(5,12,22,.94);z-index:999;padding:16px;overflow-y:auto;align-items:flex-start;justify-content:center}
 .moverlay.open{display:flex}
-.mbox{background:#0d1b2a;border:1px solid var(--border);border-radius:13px;width:100%;max-width:960px;overflow:hidden;box-shadow:0 20px 70px rgba(0,0,0,.8);margin:auto}
-.mhead{display:flex;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--border);background:#0a1628}
+.mbox{background:#0a1f0f;border:1px solid var(--border);border-radius:13px;width:100%;max-width:960px;overflow:hidden;box-shadow:0 20px 70px rgba(0,0,0,.8);margin:auto}
+.mhead{display:flex;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--border);background:#071510}
 .mtitle{flex:1;font-size:.92rem;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .mbtn{font-size:.76rem;color:var(--accent2);border:1px solid var(--border);padding:4px 10px;border-radius:6px;background:none;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-block}
 .mbtn:hover{background:rgba(58,155,213,.15)}
 .mclose{width:28px;height:28px;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:6px;cursor:pointer;color:var(--text);font-size:15px;display:flex;align-items:center;justify-content:center}
 .mclose:hover{background:rgba(255,255,255,.14)}
-.membed{width:100%;height:560px;background:#0a1628;display:block;position:relative}
+.membed{width:100%;height:560px;background:#071510;display:block;position:relative}
 .membed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:2}
 .mhint{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--muted);font-size:.85rem;text-align:center;padding:24px;line-height:1.6;z-index:1}
 .mhint .hi{font-size:2.2rem}
 .mhint strong{color:var(--text);font-size:.95rem}
 .mhint small{font-size:.78rem;color:var(--muted);margin-top:4px}
-.mfoot{padding:8px 16px;border-top:1px solid var(--border);background:#0a1628;font-size:.73rem;color:var(--muted);text-align:center}
+.mfoot{padding:8px 16px;border-top:1px solid var(--border);background:#071510;font-size:.73rem;color:var(--muted);text-align:center}
 @media(max-width:600px){header{padding:16px}.main{padding:16px 14px 40px}.tabs{padding:0 14px}.grid{grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:8px}.membed{height:320px}}
 </style>
 </head>
 <body>
 <header>
+  <a href="https://uscupstate.edu" target="_blank" style="display:inline-block;margin-bottom:10px"><img src="https://uscupstate.edu/wp-content/uploads/2023/09/cropped-uscupstate-logo.png" alt="USC Upstate" style="height:48px;filter:brightness(0) invert(1)"></a>
+
   <div class="hbrand">
     <div class="hicon">&#x1FAC0;</div>
     <div>
@@ -92,8 +94,7 @@ h1{font-size:1.5rem;font-weight:700;color:#fff}
   <button class="tab" data-cat="senses">Senses <span class="tc" id="csenses"></span></button>
   <button class="tab" data-cat="cells">Cells <span class="tc" id="ccells"></span></button>
   <button class="tab" data-cat="integumentary">Integumentary <span class="tc" id="cintegumentary"></span></button>
-  <button class="tab" data-cat="other">Other <span class="tc" id="cother"></span></button>
-</div>
+  </div>
 <div class="main" id="mainContent"></div>
 <div class="moverlay" id="moverlay">
   <div class="mbox">
@@ -119,7 +120,6 @@ h1{font-size:1.5rem;font-weight:700;color:#fff}
 var MODELS=[
 {uid:"9e8014c2eb134cbe90769b42c8d6ca33",name:"4 Layers - Dr. Doyle",cat:"fullbody"},
 {uid:"27ecbf5764094c18b9dd6a287b022840",name:"Anatomical Human Model (Dismountable)",cat:"fullbody"},
-{uid:"190183bcce7047c2988c6dc5e2f001bc",name:"Joyce University - Akash Vidya Garg",cat:"fullbody"},
 {uid:"b28d30bcc45a476d9f5e03cdb248560a",name:"Torso - Anterior",cat:"fullbody"},
 {uid:"13dcebeebd6d4422a03274feaad51357",name:"Torso - Posterior",cat:"fullbody"},
 {uid:"7eacbab995454a9280b778c69a8c603c",name:"Minime",cat:"fullbody"},
@@ -236,9 +236,6 @@ var MODELS=[
 {uid:"4e9a39555bf642298eb75f07d3bf7519",name:"Ear - External",cat:"senses"},
 {uid:"904ec8445f084a08ab03c29ff5ba3b78",name:"Tooth - Molar",cat:"senses"},
 {uid:"700d15c069b442e28981e33755618985",name:"Integumentary System Model",cat:"integumentary"},
-{uid:"750b446a958049daac1cec3d10fda626",name:"Giraffe (Comparative Anatomy)",cat:"other"},
-{uid:"ae30e57b6acf43499ebd6dc3b4598373",name:"Sutton Garg Music Station",cat:"other"},
-{uid:"10e67913faab43cfa7fafa628cae6388",name:"Test Basic - Tony Chadwick",cat:"other"}
 ];
 var CAT={all:{label:"All Models",icon:"&#128300;"},fullbody:{label:"Full Body",icon:"&#129485;"},skeletal:{label:"Skeletal",icon:"&#129460;"},muscular:{label:"Muscular",icon:"&#128170;"},nervous:{label:"Nervous System",icon:"&#129504;"},cardiovascular:{label:"Cardiovascular",icon:"&#10084;&#65039;"},respiratory:{label:"Respiratory",icon:"&#129753;"},digestive:{label:"Digestive",icon:"&#127860;&#65039;"},urinary:{label:"Urinary",icon:"&#129752;"},reproductive:{label:"Reproductive",icon:"&#128300;"},senses:{label:"Special Senses",icon:"&#128065;&#65039;"},cells:{label:"Cells",icon:"&#128309;"},integumentary:{label:"Integumentary",icon:"&#129657;"},other:{label:"Other",icon:"&#128218;"}};
 var curCat="all",curQ="",curUid=null;
